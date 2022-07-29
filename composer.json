@@ -1,0 +1,19 @@
+{
+    "name": "niloy/phpmvc",
+    "description": "A simple lightweight PHP MVC framework",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php":">=7.1",
+        "pecee/simple-router": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/Helpers/functions.php"
+        ]
+    },
+    "minimum-stability": "dev"
+}
