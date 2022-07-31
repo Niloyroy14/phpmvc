@@ -1,0 +1,42 @@
+/***********************/
+/*     Common Css     */
+/**********************/
+
+
+body{
+   margin: 0 auto;
+}
+
+
+/***********************/
+/*     Header Css     */
+/**********************/
+
+
+nav ul{
+   list-style: none;
+   margin: 0;
+   padding: 0 50px;
+   background: blueviolet;
+}
+
+
+nav ul li a{
+   padding: 10px;
+   color: #fff;
+   display: inline-block;
+   text-decoration: none;
+}
+
+
+***********************/
+/*     Content Css     */
+/**********************/
+
+.main-content {
+   padding: 0 50px;
+}
+
+/***********************/
+/*     Footer Css     */
+/**********************/

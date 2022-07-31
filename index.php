@@ -15,11 +15,20 @@ use Pecee\SimpleRouter\SimpleRouter;
 |
 */
 
-
 require __DIR__.'/vendor/autoload.php';
+
+//Load from environment variable
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 
 define('ROOT',__DIR__);
 define('VIEWS',__DIR__.'/views');
+define('BASE_DIR',isset($_ENV['BASE_DIR']) ? $_ENV['BASE_DIR'] : '');
+
+//http://localhost/phpmvc/
+define('URL',$_SERVER['REQUEST_SCHEME'] . '://' . $_SERVER['HTTP_HOST'] . '/' . BASE_DIR);
+
+define('ASSET_URL', URL .'/assets');
 
 /* Load external routes file */
 require_once 'routes/web.php';
