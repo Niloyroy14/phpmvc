@@ -1,13 +1,13 @@
 <?php
 
-use Pecee\SimpleRouter\SimpleRouter;
+use App\Base\Route;
 use App\Controllers\PortfolioController;
 use App\Controllers\WelcomeController;
 
-// SimpleRouter::get('phpmvc/', function() {
+// Route::get('phpmvc/', function() {
 //     return view('index.php');
 // });
 
-SimpleRouter::get('phpmvc/', [WelcomeController::class, 'index']);
+Route::get('/', [WelcomeController::class, 'index']);
 
-SimpleRouter::get('phpmvc/portfolio', [PortfolioController::class, 'index']);
+Route::get('portfolio', [PortfolioController::class, 'index']);

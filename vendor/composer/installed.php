@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '19adf6104beb747c12952943d62061f7f941f483',
+        'reference' => '301be12fbd62a529653fabdb97abbd035ea1be5a',
         'name' => 'niloy/phpmvc',
         'dev' => true,
     ),
@@ -25,7 +25,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '19adf6104beb747c12952943d62061f7f941f483',
+            'reference' => '301be12fbd62a529653fabdb97abbd035ea1be5a',
             'dev_requirement' => false,
         ),
         'pecee/simple-router' => array(
